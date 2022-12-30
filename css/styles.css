@@ -58,8 +58,8 @@ body {
 
 /* Logo */
 .list,
-.feature-item,
-.feature-list {
+.feature__item,
+.feature__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -257,6 +257,12 @@ body {
 
 /* Main */
 /* Section Переваги */
+  
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -269,52 +275,20 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
-
-  .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
-
-.container.feature {
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.feature-list {
+.feature__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
-.feature-item {
+.feature__item {
     /* width:calc((100%-90px)/4); */
-    width: 270px;
-    margin-right: 30px;
-    
+    width: 270px; 
 }
 
-.feature-item:nth-child(4n) {
-    margin-right: 0;
-}
-
-/* .feature-item.antenna::before {
-    content: "";
-    display: block;
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-image: url(../images/icons.svg#icon-antenna);
-    block-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-   background-color: var(--background-color-secondary);
-   outline: 1px solid tomato;
-
-} */
-
-
-
-.icon-feature {
+.feature__icon {
    width: 270px;
    height: 120px;
     margin-bottom: 30px;
@@ -323,20 +297,7 @@ body {
 }
 
 
-.section-title {
-    color: var(--color-title);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-
-
-.title {
+.feature__title {
     color: var(--color-title);
     font-weight: 700;
     font-size: 14px;
@@ -347,7 +308,7 @@ body {
     margin-bottom: 10px;
 }
 
-.text {
+.feature__text {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -357,10 +318,20 @@ body {
 
 /* Чим ми займаємось */
 
+.work__title {
+    color: var(--color-title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 .section.work {
     padding-top: 0;
 }
-
 
 img {
     display: block;
@@ -368,25 +339,26 @@ img {
     height: auto;
 }
 
-.list.work {
+.work__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
-.image {
+.work__item {
     width: 370px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
-.image:nth-child(3n) {
+/* .image:nth-child(3n) {
     margin-right: 0px;
-}
+} */
 
-.box-overlay {
+.work__overlay {
     position: relative;
 }
 
-.text-overlay-work {
+.work__box-overlay {
     position: absolute;
     display: block;
     bottom: 0;
@@ -403,7 +375,7 @@ img {
     background: var(--color-overlay-work);
 }
 
-.text-box {
+.work__text {
     padding-top: 27px;
     padding-bottom: 27px;
     margin-left: auto;
