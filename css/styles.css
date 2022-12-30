@@ -40,7 +40,7 @@ body {
 
 /* Скидання стфндартів для ul */
 .list,
-.socials-list {
+.socials {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -185,7 +185,7 @@ body {
 }
 
 
-.link, .socials-link {
+.link, .socials__link {
     text-decoration: none;
 }
 
@@ -384,31 +384,44 @@ img {
 
 /* Section Наша команда */
 
-.list.team {
-    display: flex;
-    flex-wrap: wrap;
+.team {
+    background-color: var(--background-color-secondary);
 }
 
-.item-team {
+.team__title {
+    color: var(--color-title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.employee {
     width: 270px;
-    margin-right: 30px;
-    
+}
+
+.employee__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--white);
 }
 
-.item-team:nth-child(4n) {
-    margin-right: 0px;
+.employee__info {
+    padding: 30px 32px;
 }
 
-.section.team {
-    background-color: var(--background-color-secondary);
-}
-
-
-.name {
+.employee__name {
     color: var(--color-title);
     font-weight: 500;
     font-size: 16px;
@@ -419,12 +432,8 @@ img {
     margin-top: 0;
 }
 
-.name-team {
-    padding: 30px 32px;
-}
 
-
-.profession {
+.employee__profession {
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.2;
@@ -432,20 +441,20 @@ img {
     letter-spacing: 0.03em;
 }
 
-.socials-list {
+.socials {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
 }
 
-.socials-item {
+.socials__item {
     width: 44px;
     height: 44px;
     
 }
 
-.socials-link {
+.socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -458,8 +467,8 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
     background-color: var(--accent);
     fill: var(--white);
 
@@ -593,7 +602,7 @@ address {
     color: var(--white);
 }
 
-.socials-link.footer {
+.socials__link.footer {
     fill: var(--white);
     background-color: var(--background-icon-footer);
 
@@ -601,8 +610,8 @@ address {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.socials-link.footer:hover,
-.socials-link.footer:focus {
+.socials__link.footer:hover,
+.socials__link.footer:focus {
     fill: var(--white);
     background-color: var(--accent);
 }
