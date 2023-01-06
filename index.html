@@ -10,6 +10,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
      <link rel="stylesheet" href="./css/styles.css">
+     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="body">
     <!-- Header -->
@@ -50,8 +51,8 @@
     <section class="section">
 <div class="container feature">
             <h2 class="visually-hidden">Переваги роботи з нами</h2>
-    <ul class="feature__list">
-        <li class="feature__item">
+    <ul class="feature__list list">
+        <li class="feature__item ">
             <svg class="feature__icon" width="70" height="70" >
                 <use href="./images/icons.svg#icon-antenna"></use>
             </svg>
@@ -409,8 +410,7 @@
         </button>
         <form class="form">
             <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
-            <div class="form-field">
-                <div class="form-field__control">
+            <div class="form-field form-field__modal">
                      <label class="form-field__label" for="name">Ім'я</label>
                 <div class="form-field__position">                    
                     <input class="form-field__input" type="text" name="name" id="name" autofocus>                  
@@ -418,10 +418,8 @@
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>  
                 </div> 
-                </div>
             </div>
-            <div class="form-field">
-                <div class="form-field__control">
+            <div class="form-field form-field__modal">
                     <label class="form-field__label" for="tel">Телефон</label>           
                 <div class="form-field__position">                
                     <input class="form-field__input" type="tel" name="tel" id="tel">
@@ -429,10 +427,8 @@
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>  
                 </div> 
-                </div>
             </div>
-            <div class="form__field">
-                <div class="form-field__control">
+            <div class="form__field form-field__modal">
                     <label class="form-field__label" for="mail-modal">Пошта</label>
                 <div class="form-field__position">                 
                     <input class="form-field__input" type="email" name="mail" id="mail-modal">
@@ -440,7 +436,6 @@
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>  
                 </div> 
-                </div>
             </div>
             <div class="textarea">
                 <p class="textarea__name">Коментар</p>
