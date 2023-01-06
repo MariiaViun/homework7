@@ -71,6 +71,7 @@ body {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    color:var(--accent);
 }
 
 
@@ -78,33 +79,29 @@ body {
     color: var(--logo-black);
 }
 
-.logo--accent {
-    color:var(--accent) ;
+.logo--white {
+    color:var(--white);
 }
+
 
 /* Navigation */
 
-/* Main-nav */
 
-.header__main-nav {
+.header__nav{
     display: flex;
     align-items: center;
-    /* justify-items: flex-end; */
 }
 
-    /* Site-nav */
+    /* Menu*/
 
-.header__menu {
+.menu {
     display: flex; 
     margin-left: 93px;
+    gap: 50px;
 }
 
 
-.header__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.header__link {
+.menu__link {
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -120,14 +117,14 @@ body {
 }
 
 
-.header__link:hover,
-.header__link:focus,
+.menu__link:hover,
+.menu__link:focus,
 .list .address:hover,
 .list .address:focus {
     color: var(--accent);
 }
 
-.header__link--current {
+.menu__link--current {
     position: relative;
     padding-bottom: 35px;  
     margin-bottom: -1px;
@@ -135,7 +132,7 @@ body {
 }
 
 
-.header__link--current:after {
+.menu__link--current:after {
     content:"";
     display: inline-block;
     position: absolute;
@@ -148,18 +145,18 @@ body {
 }  
 
 
-/* Auth-nav */
+/* Contacts */
 
-.header__auth-nav {
+.contacts {
     margin-left: auto;
 }
 
-.auth-nav {
+.contacts__list {
     display: flex;
     gap: 40px;
 }
 
-.auth-nav__link {
+.contacts__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,12 +170,12 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.auth-nav__link:hover,
-.auth-nav__link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color:var(--accent);
 }
 
-.auth-nav__icon {
+.contacts__icon {
     margin-right: 10px; 
     fill: currentColor;
 }
@@ -188,22 +185,20 @@ body {
     text-decoration: none;
 }
 
-     /* Hero */
+
+/* Hero */
 .hero {
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-
     max-width: 1600px;
     height: 600px;
- 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
     text-align: center;
 }
 
@@ -541,10 +536,6 @@ img {
     margin-right: 70px;
 }
 
-.logo--white {
-    color:var(--white);
-}
-
 .address {
     margin-top: 20px;
     font-style: normal;
@@ -677,10 +668,13 @@ img {
     border-radius: 4px;
 }
 
-.button__modal {
+.modal__button {
     position: absolute;
     top: 8px;
     right: 8px;
+}
+
+.button-close {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -716,11 +710,11 @@ img {
     color: var(--color-title);
 }
 
-.form__position {
+.form-field {
     margin-bottom: 10px;
 }
 
-.input__label {
+.form-field__label {
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
@@ -728,12 +722,12 @@ img {
     color: var(--primary-text-color);
 }
 
-.input__icon-position {
+.form-field__position {
     position: relative;
     margin-top: 4px;
 }
 
-.input__icon {
+.form-field__icon {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -741,12 +735,12 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input__input:focus ~ .input__icon,
-.input__input:hover ~ .input__icon {
+.form-field__input:focus ~ .form-field__icon,
+.form-field__input:hover ~ .form-field__icon {
     fill: var(--accent);
 }
 
-.input__input {
+.form-field__input {
     display: inline-block;
     height: 40px;
     width: 100%;
@@ -757,13 +751,14 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input__input:hover,
-.input__input:focus {
+.form-field__input:hover,
+.form-field__input:focus {
     border-color: var(--accent);
 }
 
 .textarea {
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .textarea__name {
@@ -808,6 +803,8 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+    width: 16px;
+    height: 15px;
 }
 
 .checkbox__icon {
@@ -849,11 +846,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     
-}
-
-.checkbox__input {
-    width: 16px;
-    height: 15px;
 }
 
 .flex-button {
@@ -950,7 +942,7 @@ img {
 .project__text {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;б
     padding: 63px 24px;
     width: 100%;
     height: 100%;
