@@ -5,13 +5,13 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color:var(--accent);
+    color:$accent;
 
     &--black {
-    color: var(--logo-black);
+    color: $logo-black;
 }
     &--white {
-    color:var(--white);
+    color:$white;
 }
 }
 

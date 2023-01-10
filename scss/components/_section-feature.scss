@@ -1,0 +1,36 @@
+.feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature__item {
+    width: 270px; 
+}
+
+.feature__icon {
+   width: 270px;
+   height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: $background-color-secondary;
+}
+
+.feature__title {
+    color: $color-title;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature__text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
