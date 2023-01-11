@@ -67,7 +67,9 @@
 }
 }
 
-.project__card:hover .project__text {
+.project__card:hover .project__text,
+.project__card:focus .project__text
+ {
     transform: translateY(0);
 }
 
